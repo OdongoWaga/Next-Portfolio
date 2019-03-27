@@ -1,15 +1,15 @@
 import Link from "next/link";
 import Head from "next/head";
-//import Router from "next/router";
-//import NProgress from "nprogress";
+import Router from "next/router";
+import NProgress from "nprogress";
 
-// Router.onRouteChangeStart = (url) => {
-// 	console.log(url);
-// 	NProgress.start();
-// };
+Router.onRouteChangeStart = (url) => {
+	console.log(url);
+	NProgress.start();
+};
 
-// Router.onRouteChangeComplete = () => NProgress.done();
-// Router.onRouteChangeError = () => NProgress.done();
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 export default ({ children, title }) => (
 	<div className="root">
@@ -48,7 +48,7 @@ export default ({ children, title }) => (
 				justify-content: space-around;
 				padding: 1em;
 				font-size: 1.2rem;
-				background: indigo;
+				background: blue;
 			}
 			header a {
 				color: darkgrey;
