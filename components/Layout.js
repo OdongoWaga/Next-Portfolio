@@ -48,7 +48,7 @@ export default ({ children, title }) => (
 				justify-content: space-around;
 				padding: 1em;
 				font-size: 1.2rem;
-				background: blue;
+				background: purple;
 			}
 			header a {
 				color: darkgrey;
